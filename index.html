@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="title">ToDolist</div>
+            <div class="nav-items">
+                <div class="nav-item active">Barchasi</div>
+                <div class="nav-item">Bajarilganlar</div>
+                <div class="nav-item">Bajarilmaganlar</div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main">
+            <div class="cards">
+                <div class="card">
+                    <div class="card-btns">
+                        <img src="./imgs/Pencil.png" alt="">
+                        <img src="./imgs/remove.png" alt="">
+                    </div>
+                    <div class="card-title">Title</div>
+                    <div class="card-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, sapiente?</div>
+                    <div class="card-data_author">
+                        <div class="card-data">08.12.2021</div>
+                        <div class="card-author">Ochilov J.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="add-btn" onclick="clickAddBtn()">+</div>
+        </div>
+    </div>
+
+    <!-- <div class="container-modal">
+        <div class="modal">
+            <div class="close-btn">
+                <img src="/imgs/remove-symbol 1.png" alt="">
+            </div>
+            <div class="modal-title">Yangi topshiriq</div>
+            <input type="text" id="title" placeholder="Sarlavha">
+            <input type="text" id="description" placeholder="Batafsil ma'lumot">
+            <input type="date" id="dedline" placeholder="Dedline">
+            <select name="xodim" id="user">
+                <option value="default">Xodim tanlang</option>
+                <option value="Ochilov">Ochilov Javohir</option>
+                <option value="Hamidov">Hamidov Bahrom</option>
+            </select>
+            <button class="modal-btn">Qo'shish</button>
+
+        </div>
+    </div> -->
+    
+
+    <script src="./app.js"></script>
+    
+</body>
+</html>

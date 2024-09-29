@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: auto;
+}
+.container{
+    max-width: 370px;
+    margin: auto;
+    overflow: auto;
+}
+
+/* Header styles */
+.header{
+    border-bottom: 1px solid #000;
+    margin-top: 30px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 10;
+}
+.title{
+    text-align: center;
+    font: roboto;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+.nav-items{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 10px;
+}
+.nav-item{
+    padding: 0 10px;
+    text-align: center;
+    padding: 5px 8px;
+    font: roboto;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 700;
+}
+
+.nav-items .active{
+    background-color: red;
+    color: #fff;
+}
+
+
+/* Main styles */
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    width: 100%;
+    z-index: 10;
+    overflow: auto;
+    /* position: relative; */
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100px; */
+    width: 100%;
+    gap: 10px;
+    overflow: auto;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background-color: #9fe3e8;
+    padding: 10px 15px;
+    width: 100%;
+}
+.card-btns{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+.card-btns img{
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+.card-data_author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.card-title,
+.card-data,
+.card-author{
+    font: roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+}
+.card-description{
+    font: roboto;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+}
+.add-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2CB932;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    position: fixed;
+    bottom: 15px;
+}
+.add-btn:hover{
+    cursor: pointer;
+}
+
+/* Modal styles */
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    background-color: white;
+    width: 372px;
+    opacity: 1;
+    position: relative;
+}
+.container-modal{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+}
+
+.modal input,
+.modal select{
+    width: 100%;
+}
+.modal-title{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #000;
+    margin-bottom: 40px;
+}
+.close-btn{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+.modal input,
+.modal select{
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.modal-btn{
+    padding: 10px 45px;
+    border-radius: 15px;
+    border: none;
+    background-color: #2CB932;
+    color: #000;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 40px;
+}
